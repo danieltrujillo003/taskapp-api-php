@@ -1,6 +1,7 @@
 # TASKAPP
 
-RESTful API to manage tasks. The API is built in Vanila PHP with a local database in MySQL.
+RESTful API to manage tasks. The API is built in Vanila PHP with a local database in MySQL.  
+`taskapp.sql` can be found on `./config` ready to be imported and so the API can run with no problems.
 
 ## Endpoints
 
