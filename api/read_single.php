@@ -13,9 +13,9 @@
   $task->id = isset($_GET['id']) ? $_GET['id'] : die();
 
   $result = $task->read_single();
-  
+
   $row = $result->fetch(PDO::FETCH_ASSOC);
-  
+
   extract($row);
 
   $tasks_arr = array();

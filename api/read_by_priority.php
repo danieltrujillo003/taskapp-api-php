@@ -12,10 +12,10 @@
 
   $p = isset($_GET['p']) ? $_GET['p'] : die();
   $priorities_list = explode(',', $p);
-  
+
   $tasks_arr = array();
   $tasks_arr['data'] = array();
-  
+
   foreach ($priorities_list as $priority) {
     $tasks_arr['data']['P'.$priority] = array();
 

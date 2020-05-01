@@ -52,7 +52,7 @@
           priority = :priority,
           task = :task,
           date = :date';
-      
+
       $stmt = $this->conn->prepare($query);
 
       $stmt->bindParam(':priority', $this->priority);
@@ -78,7 +78,7 @@
           date = :date
         WHERE
           id = :id';
-      
+
       $stmt = $this->conn->prepare($query);
 
       $stmt->bindParam(':priority', $this->priority);

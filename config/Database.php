@@ -5,7 +5,7 @@
     private $username = 'root';
     private $password = '123456';
     private $conn;
-    
+
     public function connect() {
       $this->conn = null;
 
@@ -17,7 +17,7 @@
         );
 
         $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        
+
       } catch(PDOException $e) {
         echo 'Connection Error: ' . $e->getMessage();
       }
